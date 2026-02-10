@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  min-height:100vh;
+  font-family: 'Poppins', sans-serif;
+
+  /* Romantic gradient */
+  background: linear-gradient(
+    135deg,
+    #ff9a9e 0%,
+    #fad0c4 25%,
+    #fad0c4 50%,
+    #fbc2eb 75%,
+    #a18cd1 100%
+  );
+
+  overflow:hidden;
+}
+
+/* floating hearts */
+body::before{
+  content:"❤️ 💖 💗 💕 💘 ❤️ 💖 💗 💕 💘";
+  position:fixed;
+  top:0;
+  left:0;
+  width:200%;
+  height:200%;
+  font-size:40px;
+  opacity:0.15;
+  animation:floatHearts 25s linear infinite;
+}
+
+@keyframes floatHearts{
+  from{
+    transform:translateY(0) translateX(0);
+  }
+  to{
+    transform:translateY(-50%) translateX(-25%);
+  }
+}

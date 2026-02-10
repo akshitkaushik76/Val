@@ -1,0 +1,54 @@
+.card-swap-container {
+  position: absolute;
+  bottom:40px;
+  width: 500px;
+  height: 420px;
+  perspective: 1200px;
+}
+
+
+/* GLASS EFFECT CARD */
+.card {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+ 
+
+  padding: 30px;
+  border-radius: 22px;
+
+  /* glassmorphism */
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255,255,255,0.35);
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.25),
+    inset 0 0 20px rgba(255,255,255,0.2);
+
+  color: #222;
+
+  transform-style: preserve-3d;
+  will-change: transform;
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+
+/* card text */
+.card h3{
+  font-family: 'Great Vibes', cursive;
+  font-size: 38px;
+  margin-bottom: 10px;
+  color: #111;
+  text-shadow:none;
+}
+
+
+
+.card p{
+  
+  color: #222;
+  
+}
+

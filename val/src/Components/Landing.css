@@ -1,0 +1,169 @@
+/* ===== PAGE BACKGROUND ===== */
+body{
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  font-family: 'Poppins', sans-serif;
+
+  /* romantic soft gradient */
+  background: linear-gradient(
+    135deg,
+    #ffd1dc 0%,
+    #ffc0cb 25%,
+    #f3b6ff 60%,
+    #cdb4ff 100%
+  );
+}
+
+
+/* ===== MAIN CONTAINER ===== */
+.landing-container{
+  height:100vh;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 8%;
+  position:relative;
+}
+
+
+
+
+/* ===== CARD AREA ===== */
+.cards-area{
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:flex-end;     /* push cards downward */
+  justify-content:center;
+  position:relative;
+  z-index:1;
+  padding-bottom:70px;
+}
+
+
+/* ===== CARD SWAP CONTAINER ===== */
+.card-swap-container {
+  position:absolute;
+  bottom:40px;              /* anchor to bottom so it never hits title */
+  width:500px;
+  height:420px;
+  perspective:1200px;
+}
+
+
+/* ===== GLASSMORPHISM CARD ===== */
+.card {
+  position:absolute;
+  top:65%;                  /* IMPORTANT: keeps cards lower */
+  left:50%;
+  transform:translate(-50%, -50%);
+
+  padding:30px;
+  border-radius:24px;
+
+  background:rgba(255,255,255,0.35);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+
+  border:1px solid rgba(255,255,255,0.5);
+
+  box-shadow:
+    0 15px 50px rgba(0,0,0,0.25),
+    inset 0 0 25px rgba(255,255,255,0.4);
+
+  color:#111;
+
+  transform-style:preserve-3d;
+  will-change:transform;
+  backface-visibility:hidden;
+
+  transition:all 0.5s ease;
+}
+
+
+/* ===== CARD TEXT ===== */
+
+/* Heading */
+.card h3{
+  font-family:'Great Vibes', cursive;
+  font-size:38px;
+  margin-bottom:10px;
+  color:#111;           /* BLACK */
+}
+
+/* Paragraph */
+.card p{
+  font-size:17px;
+  color:#222;           /* BLACK */
+  line-height:1.6;
+}
+
+
+/* ===== SMALL SCREEN (mobile fix) ===== */
+@media(max-width:768px){
+
+  .title{
+    font-size:42px;
+  }
+
+  .subtitle{
+    font-size:16px;
+  }
+
+  .card-swap-container{
+    width:90%;
+    height:380px;
+  }
+
+  .card{
+    padding:22px;
+  }
+
+  .card h3{
+    font-size:30px;
+  }
+
+}
+
+
+/* ===== TOP CENTER FIXED HEADER ===== */
+
+.header-overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  pointer-events:none;
+  z-index:99999;
+}
+
+/* text box */
+.love-text{
+  margin-top:12px;
+  text-align:center;
+  background:rgba(255,255,255,0.35);
+  backdrop-filter:blur(8px);
+  padding:8px 16px;
+  border-radius:18px;
+}
+
+/* title */
+.title{
+  font-family:'Great Vibes',cursive;
+  font-size:34px;
+  color:#000;
+  margin:0;
+  line-height: 1.1;
+}
+
+/* subtitle */
+.subtitle{
+  margin-top:3px;
+  font-size:14px;
+  color:#000;
+  line-height:1.35;
+}
