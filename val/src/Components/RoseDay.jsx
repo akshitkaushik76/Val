@@ -18,7 +18,7 @@ export default function RoseDay(){
 
         Every time you smile, my entire day fixes itself.
         I don’t know what we are in the future,
-        but I know one thing —
+        but I know one thing 
         meeting you was never a coincidence for me.
         Usko kya hi gulaab do jo khud gulaab ho.
       </div>

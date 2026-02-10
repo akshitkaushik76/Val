@@ -22,8 +22,8 @@ export default function ValentineDay(){
         but I know this 
         loving you was never a mistake.
 
-        And if someday life gives me a chance,
-        I would still choose you again.
+        And if someday universe gives me a chance,i'll do hard work
+        to be with you my lovee.
         WOULD U BE MY VALENTINE FOR LIFE
       </div>
 

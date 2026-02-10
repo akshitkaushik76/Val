@@ -14,8 +14,8 @@ export default function ProposeDay(){
       <div className="message">
         I’m not promising a perfect life.
 
-        I’m promising late night talks,
-        random arguments,
+        I’m not promising late night talks,
+        I'am promising random arguments,
         stupid jokes,
         and a person who will never stop choosing you.
 
